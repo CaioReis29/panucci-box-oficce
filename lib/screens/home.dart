@@ -12,7 +12,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   @override
   void initState() {
     super.initState();
@@ -40,7 +39,17 @@ class _HomeState extends State<Home> {
                   mainAxisExtent: 240,
                 ),
                 itemBuilder: (context, index) {
-                  return MovieCard(movie: Movie(name: "James Bond", classification: Classification.naoRecomendado12, duration: "1h 22min", sinopse: "James Bond é um agente", genre: "Suspense", imageURI: null, sessions: ["18:00"]));
+                  return MovieCard(
+                    movie: Movie(
+                      name: "James Bond",
+                      classification: Classification.naoRecomendado12,
+                      duration: "1h 22min",
+                      sinopse: "James Bond é um agente",
+                      genre: "Suspense",
+                      imageURI: null,
+                      sessions: ["18:00"],
+                    ),
+                  );
                 },
                 itemCount: 5,
               ),
